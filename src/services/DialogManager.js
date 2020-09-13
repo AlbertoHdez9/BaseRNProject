@@ -1,18 +1,12 @@
 import React from 'react';
 import { Alert } from 'react-native';
 
-//Resources
-
-
 export class DialogManager {
 
     static singleAlert = (message) => {
         return Alert.alert(
-            "",
-            message,
-            [
-                { text: 'Accept', onPress: () => {} },
-            ],
+            "", message,
+            [{ text: 'Accept', onPress: () => {} }],
             { cancelable: false }
         );
     };
@@ -21,9 +15,7 @@ export class DialogManager {
         return Alert.alert(
             (title !== "") ? title : "",
             message,
-            [
-                { text: 'Accept', onPress: callbackOK },
-            ],
+            [{ text: 'Accept', onPress: callbackOK }],
             { cancelable: false }
         );
     };

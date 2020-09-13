@@ -1,37 +1,27 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
-import { Router, Scene, Stack} from 'react-native-router-flux';
+import { Router, Scene, Stack } from 'react-native-router-flux';
 
 // Navigation
-import {NavBarBack} from 'services/navigation/NavBarBack';
-import NavBarMain from 'services/navigation/NavBarMain';
+// import {NavBarBack} from 'services/navigation/NavBarBack';
+// import NavBarMain from 'services/navigation/NavBarMain';
 
 // Resources
 import {Style} from 'resources/styles';
-import Routing from 'services/navigation/Routing';
-
-// Views
-import Films from 'modules/films/filmsContainer'
-import FilmDetail from 'modules/filmDetail/filmDetailContainer'
-
+// import Routing from 'services/navigation/Routing';
 
 const RouterComponent = () => {
 
     return (
         <Router style={styles.router}>
             <Stack key="root">
-                <Scene
-                    key={Routing.films}
-                    initial
-                    navBar={NavBarMain}
-                    component={Films}
-                    title="Films"
-                />
-                <Scene
-                    key={Routing.filmDetail}
-                    component={FilmDetail}
-                    navBar={NavBarBack}
-                    title="Film" />
+                {/*<Scene*/}
+                {/*    key={Routing.films}*/}
+                {/*    initial*/}
+                {/*    navBar={NavBarMain}*/}
+                {/*    component={Films}*/}
+                {/*    title="Films"*/}
+                {/*/>*/}
             </Stack>
         </Router>
     );

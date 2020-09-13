@@ -2,16 +2,6 @@ import { Actions } from 'react-native-router-flux';
 
 export default class Routing {
 
-    /** **** **/
-    /** Films **/
-    /** **** **/
-    static films      = 'filmsContainer';
-
-    /** *********** **/
-    /** Film Detail **/
-    /** *********** **/
-    static filmDetail = 'filmDetail';
-
     /** ******* **/
     /** Methods **/
     /** ******* **/

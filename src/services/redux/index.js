@@ -1,13 +1,7 @@
-import {combineReducers} from 'redux';
-
-// Reducers
-import FilmsReducer from 'modules/films/filmsReducer';
-import FilmDetailReducer from 'modules/filmDetail/filmDetailReducer';
+import { combineReducers } from 'redux';
 import LoadingReducer from 'services/redux/loading/loadingReducer';
 
 const reducer = combineReducers({
-    FilmsReducer,
-    FilmDetailReducer,
     LoadingReducer,
 });
 
